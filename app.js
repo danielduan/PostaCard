@@ -1,5 +1,5 @@
 var express = require('express')
-  , MobileRoutes = require('./routes/MobileRoutes.js')
+ // , MobileRoutes = require('./routes/MobileRoutes.js')
   , http = require('http')
   , path = require('path');
 
@@ -33,8 +33,8 @@ if ('development' == app.get('env')) {
 }
 
 //card send v1
-app.get('/mobile/v1/card/balance', MobileRoutes.cardbalance);
-app.post('/mobile/v1/card/send', MobileRoutes.sendcard);
+//app.get('/mobile/v1/card/balance', MobileRoutes.cardbalance);
+//app.post('/mobile/v1/card/send', MobileRoutes.sendcard);
 //app.post('/mobile/v1/card/recharge', MobileRoutes.chargecardbalance);
 
 http.createServer(app).listen(app.get('port'), function(){
