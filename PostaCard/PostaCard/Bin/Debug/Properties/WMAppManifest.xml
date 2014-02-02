@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="en-US" />
+  <App xmlns="" ProductID="{96768121-9ad4-42a1-a707-626c29f6c009}" Title="PostaCard" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Daniel Duan" Description="Take a picture and send it as a postcard on the go!" Publisher="PostaCard" PublisherID="{422216b7-d7ce-4688-bfd0-f6593d014523}">
+    <IconPath IsRelative="true" IsResource="false">icon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_ISV_CAMERA" />
+      <Capability Name="ID_CAP_MEDIALIB_PHOTO" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="PostaCardToken" TaskName="_default">
+        <TemplateIconic>
+          <SmallImageURI IsRelative="true" IsResource="false">icon.jpg</SmallImageURI>
+          <Count>0</Count>
+          <IconImageURI IsRelative="true" IsResource="false">icon.jpg</IconImageURI>
+          <Title></Title>
+          <Message></Message>
+          <BackgroundColor></BackgroundColor>
+          <HasLarge>false</HasLarge>
+          <LargeContent1></LargeContent1>
+          <LargeContent2></LargeContent2>
+          <LargeContent3></LargeContent3>
+          <DeviceLockImageURI IsRelative="true" IsResource="false"></DeviceLockImageURI>
+        </TemplateIconic>
+      </PrimaryToken>
+    </Tokens>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+    <Requirements>
+      <Requirement Name="ID_REQ_REARCAMERA" />
+    </Requirements>
+  </App>
+</Deployment>
+<!-- WPSDK Version 8.0.9900 -->
